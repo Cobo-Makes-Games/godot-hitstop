@@ -1,0 +1,22 @@
+; Demo and test project for the Hitstop add-on. Only addons/hitstop is the add-on.
+config_version=5
+
+[application]
+
+config/name="Hitstop demo"
+run/main_scene="res://demo/demo.tscn"
+config/features=PackedStringArray("4.3")
+
+[autoload]
+
+Hitstop="*res://addons/hitstop/hitstop.gd"
+
+[display]
+
+window/size/viewport_width=960
+window/size/viewport_height=540
+window/stretch/mode="canvas_items"
+
+[editor_plugins]
+
+enabled=PackedStringArray("res://addons/hitstop/plugin.cfg")
